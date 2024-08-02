@@ -1,0 +1,66 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.input-wrapper{
+  position: relative;
+}
+.input-wrapper label{
+  display: inline-block;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 7px;
+  border-bottom: 2px #aaa solid;
+  border-right: 2px #aaa solid; 
+  border-top: 2px#484848 solid;
+  border-left: 2px #484848 solid; 
+  background-color: #1a1a1a;
+}
+
+.input-wrapper label:hover{
+  /*box-shadow: 2px soli;*/
+  box-shadow: rgba(232, 232, 232, 0.25) 0px 5px 33px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border: 2px solid #d8d8d8;
+}
+
+.input-wrapper input[type="file"] {
+  position: absolute;
+  z-index: -1;
+  display: none;
+}
+
+.result{
+  max-width: 100%;
+  margin-top: 12px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.result img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.result .box-image{
+  height: 100%;
+}
+
+.result .box-p{
+  height: 100%;
+}
+.result-label{
+
+}
+.result-field{
+  padding: 6px 10px;
+  border-radius: 7px;
+}
+@media (min-width:1000px) {
+  .result{
+    grid-template-columns: 1fr 1fr;
+  }
+}
