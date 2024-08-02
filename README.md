@@ -29,4 +29,4 @@ npm install
 npm install tesseract.js
 
 Run the Application:
-npm start
+npm run dev
